@@ -1,17 +1,34 @@
 package org.ostad;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+class Books {
+    String title;
+    String author;
+}
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+class BooksTestDrive {
+    public static void main(String[] args) {
+        Books[] myBooks = new Books[3];
+        int x = 0;
+
+        // STEP 1: Create the objects
+        myBooks[0] = new Books();
+        myBooks[1] = new Books();
+        myBooks[2] = new Books();
+
+        myBooks[0].title = "The Grapes of Java";
+        myBooks[1].title = "The Java Gatsby";
+        myBooks[2].title = "The Java Cookbook";
+        myBooks[0].author = "bob";
+        myBooks[1].author = "sue";
+        myBooks[2].author = "ian";
+
+
+        while (x < 3) {
+            System.out.print(myBooks[x].title);
+            System.out.print(" by ");
+            System.out.println(myBooks[x].author);
+            x = x + 1;
         }
+
     }
 }
