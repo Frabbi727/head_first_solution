@@ -11,7 +11,7 @@ class TestArrays {
 
     }
 
-    //1. Final class can not be extend
+    //1. Final class can not be extended
     //2. Final method can not be override
     //3. Final variables can not be changed
     //4. Final variables one change by constructor
