@@ -1,27 +1,7 @@
 package org.ostad;
 
-class Hobbits {
-    String name;
+class TestArrays {
+    public static void main(String [] args) {
 
-    public static void main(String[] args) {
-        Hobbits[] h = new Hobbits[3];
-        int z = 0;
-
-        while (z < 4) {
-            System.out.println("add of z=" +z);
-            z = z + 1;
-            System.out.println("value of z=" +z);
-
-            h[z] = new Hobbits();
-            h[z].name = "bilbo";
-            if (z == 1) {
-                h[z].name = "frodo";
-            }
-            if (z == 2) {
-                h[z].name = "sam";
-            }
-            System.out.print(h[z].name + " is a ");
-            System.out.println("good Hobbit name");
-        }
     }
 }
